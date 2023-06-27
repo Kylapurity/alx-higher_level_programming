@@ -1,16 +1,16 @@
 #!/usr/bin/python3
-'''Defined a class called Square which represents a aquare'''
+"""Define a class Square."""
 
 
 class Square:
-    '''Square class with private size attr'''
+    """Represent a square."""
 
-    def __init__(self, size=0):
-        '''Initializes instances of Square.
+    def __init__(self, size):
+        """Initialize a new square.
 
-           Args:
-                size (int): Represents the size of one side of the square.
-        '''
+        Args:
+            size (int): The size of the new square.
+        """
         self.size = size
 
     @property
@@ -29,6 +29,7 @@ class Square:
     def area(self):
         """Return the current area of the square."""
         return (self.__size * self.__size)
+
     def my_print(self):
         """Print the square with the # character."""
         for i in range(0, self.__size):
