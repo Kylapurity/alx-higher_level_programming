@@ -1,15 +1,14 @@
 #!/usr/bin/python3
 '''Defined a class called Square which represents a aquare'''
 
-
 class Square:
-    '''Square class with private size attr'''
+    '''Square represents an instance of a square shape'''
 
     def __init__(self, size=0):
-        '''Initializes instances of Square.
+        '''Initializes a new square object
 
            Args:
-                size (int): Represents the size of one side of the square.
+                size (int): The size of the square.
         '''
         if (type(size) != int):
             raise TypeError("size must be an integer")
@@ -25,4 +24,3 @@ class Square:
                The value of the area (int).
         '''
         return self.__size ** 2
-
